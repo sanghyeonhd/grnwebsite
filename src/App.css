@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  @apply bg-secondary min-h-screen;
+}
+
+.header {
+  @apply border-b border-secondary-dark;
+}
+
+.content-section {
+  @apply py-16;
+}
+
+.text-content {
+  @apply text-gray-light leading-relaxed;
+}
+
+.image-overlay {
+  @apply relative;
+}
+
+.image-overlay::after {
+  @apply content-[''] absolute inset-0 bg-black bg-opacity-10;
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-600 hover:text-gray-900 transition-colors;
+  }
+
+  .brand-card {
+    @apply overflow-hidden;
+  }
+
+  .brand-card img {
+    @apply transition-transform duration-300;
+  }
+
+  .brand-card:hover img {
+    @apply scale-105;
+  }
+
+  .journal-card {
+    @apply overflow-hidden;
+  }
+
+  .journal-card img {
+    @apply transition-transform duration-300;
+  }
+
+  .journal-card:hover img {
+    @apply scale-105;
+  }
+
+  .search-btn {
+    @apply w-6 h-6 flex items-center justify-center;
+  }
+
+  .login-btn {
+    @apply hover:bg-gray-50 transition-colors;
+  }
+}
