@@ -1,10 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import GlobalStyle from './styles/GlobalStyle';
-import { SearchIcon, CartIcon } from './components/icons';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignupTerms from './pages/SignupTerms';
+import SignupId from './pages/SignupId';
 
-const App = () => {
+function App() {
   return (
+<<<<<<< HEAD
     <>
       <GlobalStyle />
       <Container>
@@ -107,201 +108,16 @@ const App = () => {
         </Footer>
       </Container>
     </>
+=======
+    <Router>
+      <Routes>
+        <Route path="/signup/terms" element={<SignupTerms />} />
+        <Route path="/signup/id" element={<SignupId />} />
+      </Routes>
+    </Router>
+>>>>>>> 89c8f8534c3925cb8bddd357768b972d76b2b627
   );
-};
-
-// Styled Components
-const Container = styled.div`
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
-`;
-
-const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-`;
-
-const HeaderRight = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-`;
-
-const LoginButton = styled.button`
-  padding: 8px 16px;
-  background: transparent;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #333;
-  
-  &:hover {
-    background: #f5f5f5;
-  }
-`;
-
-const Logo = styled.h1`
-  font-size: 24px;
-  font-weight: 500;
-`;
-
-const NavMenu = styled.nav`
-  display: flex;
-  gap: 40px;
-`;
-
-const NavItem = styled.a`
-  font-size: 16px;
-  color: #333;
-  text-decoration: none;
-  cursor: pointer;
-  
-  &:hover {
-    color: #666;
-  }
-`;
-
-const Main = styled.main`
-  padding: 40px 0;
-`;
-
-const Section = styled.section`
-  margin-bottom: 80px;
-`;
-
-const SectionTitle = styled.h2`
-  font-size: 24px;
-  margin-bottom: 40px;
-`;
-
-const BrandGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-`;
-
-const BrandCard = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const BrandImage = styled.img`
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-`;
-
-const BrandLogo = styled.h3`
-  font-size: 20px;
-  margin-bottom: 16px;
-`;
-
-const BrandDescription = styled.p`
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
-`;
-
-const SubTitle = styled.h4`
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 24px;
-`;
-
-const StoreImage = styled.img`
-  width: 100%;
-  height: auto;
-  margin-bottom: 32px;
-`;
-
-const StoreDescription = styled.div`
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-`;
-
-const JournalGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-`;
-
-const JournalCard = styled.div`
-  cursor: pointer;
-  
-  &:hover {
-    opacity: 0.8;
-  }
-`;
-
-const JournalImage = styled.img`
-  width: 100%;
-  height: auto;
-  margin-bottom: 16px;
-`;
-
-const JournalTitle = styled.h3`
-  font-size: 18px;
-  margin-bottom: 8px;
-`;
-
-const JournalDate = styled.p`
-  font-size: 14px;
-  color: #666;
-`;
-
-const StoreLink = styled.div`
-  cursor: pointer;
-  padding: 24px;
-  background: #f5f5f5;
-  
-  &:hover {
-    background: #eee;
-  }
-`;
-
-const StoreLinkDescription = styled.div`
-  margin-top: 16px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-`;
-
-const Footer = styled.footer`
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
-  border-top: 1px solid #eee;
-`;
-
-const FooterLeft = styled.div``;
-
-const FooterRight = styled.div``;
-
-const FooterText = styled.p`
-  font-size: 16px;
-  margin-bottom: 8px;
-`;
-
-const FooterLinks = styled.div`
-  display: flex;
-  gap: 24px;
-`;
-
-const FooterLink = styled.a`
-  font-size: 14px;
-  color: #666;
-  text-decoration: none;
-  
-  &:hover {
-    color: #333;
-  }
-`;
+}
 
 
 interface FooterLinkProps {
