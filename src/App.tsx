@@ -97,8 +97,8 @@ const App = () => {
           </FooterLeft>
           <FooterRight>
             <FooterLinks>
-              <FooterLink>개인정보 처리방침</FooterLink>
-              <FooterLink>이용약관</FooterLink>
+              <FooterLinkComponent href="/privacy-policy.html">개인정보 처리방침</FooterLinkComponent>
+              <FooterLinkComponent href="/terms.html">이용약관</FooterLinkComponent>
               <FooterLink>채용정보</FooterLink>
               <FooterLink>매장안내</FooterLink>
               <FooterLink>CONTACT</FooterLink>
@@ -302,5 +302,15 @@ const FooterLink = styled.a`
     color: #333;
   }
 `;
+
+
+interface FooterLinkProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+const FooterLinkComponent: React.FC<FooterLinkProps> = ({href, children}) => {
+  return <FooterLink href={href}>{children}</FooterLink>
+}
 
 export default App;

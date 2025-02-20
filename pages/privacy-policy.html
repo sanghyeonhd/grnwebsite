@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보처리방침 - GRANHAND.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: rgb(253, 251, 245);
+            color: rgb(111, 105, 99);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 160px;
+        }
+
+        /* 헤더 스타일 */
+        .header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgb(233, 230, 224);
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 140px;  /* 로고 이미지 크기에 맞게 조정 */
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(111, 105, 99);
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* 메인 콘텐츠 스타일 */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 40px 0;
+            color: rgb(111, 105, 99);
+            font-weight: normal;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: rgb(233, 230, 224);
+            margin: 20px 0;
+        }
+
+        /* 테이블 스타일 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            color: rgb(111, 105, 99);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid rgb(233, 230, 224);
+        }
+
+        th {
+            background-color: rgb(253, 251, 245);
+            font-weight: normal;
+        }
+
+        /* 섹션 스타일 */
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 20px 0;
+            color: rgb(111, 105, 99);
+            font-weight: normal;
+        }
+
+        /* 푸터 스타일 */
+        .web-footer {
+            width: 100%;
+            background-color: rgba(253, 251, 245, 1);
+            padding: 60px 160px;
+            font-family: 'Pretendard';
+        }
+
+        .footer-content {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .footer-menu {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: rgba(111, 105, 99, 1);
+        }
+
+        .footer-menu a {
+            text-decoration: none;
+            color: rgba(111, 105, 99, 1);
+        }
+
+        .footer-middle {
+            margin-bottom: 40px;
+        }
+
+        .footer-quote {
+            font-style: italic;
+            font-size: 14px;
+            color: rgba(111, 105, 99, 1);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .footer-description {
+            font-size: 14px;
+            color: rgba(111, 105, 99, 1);
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(233, 230, 224, 1);
+            padding-top: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: rgba(111, 105, 99, 1);
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: rgba(111, 105, 99, 1);
+        }
+
+        .divider {
+            color: rgba(111, 105, 99, 0.5);
+        }
+
+        .company-info {
+            font-size: 14px;
+            color: rgba(192, 188, 182, 1);
+            line-height: 1.6;
+        }
+
+        .instagram-link img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('/fonts/Pretendard-Regular.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/privacy-policy.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="GRANHAND" />
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">JOURNAL</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">AWARDS</a></li>
+                    <li><a href="#">STORE</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="#" class="icon-link">
+                        <img src="/images/icon-search.svg" alt="검색" />
+                    </a>
+                    <a href="#" class="icon-link">
+                        <img src="/images/icon-cart.svg" alt="장바구니" />
+                    </a>
+                    <a href="#" class="icon-link">로그인</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <h1>개인정보처리방침</h1>
+            <div class="divider"></div>
+
+            <section class="intro">
+                <p>㈜그랑핸드(이하 '회사'라고 함)는 「개인정보보호법」을 준수하여, 정보주체의 개인정보 및 권익을 보호하고 개인정보와 관련한 정보주체의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.</p>
+                <p>회사는 개인정보처리방침을 통하여 정보주체가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.</p>
+            </section>
+
+            <section class="collection-purpose">
+                <h2>1. 개인정보의 처리 목적 및 수집항목</h2>
+                <p>회사는 다음의 목적을 위하여 개인정보를 처리합니다.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>수집항목</th>
+                            <th>수집목적</th>
+                            <th>보유기간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>회원가입 및 관리</td>
+                            <td>[필수] 이메일주소, 비밀번호, 이름(실명), 휴대전화번호, 주소<br>[선택] 생년월일, 성별</td>
+                            <td>회원제 서비스 이용, 본인확인, 가입의사 확인, 연령확인, 고지사항 전달</td>
+                            <td>회원 탈퇴시까지</td>
+                        </tr>
+                        <tr>
+                            <td>주문/결제</td>
+                            <td>주문자 정보, 배송지 정보, 결제 정보</td>
+                            <td>주문 상품의 결제 및 배송</td>
+                            <td>5년</td>
+                        </tr>
+                        <tr>
+                            <td>고객 상담</td>
+                            <td>이메일주소, 연락처</td>
+                            <td>고객 문의사항 처리 및 답변</td>
+                            <td>3년</td>
+                        </tr>
+                        <tr>
+                            <td>마케팅/이벤트</td>
+                            <td>이메일주소, 휴대전화번호</td>
+                            <td>이벤트 정보 전달</td>
+                            <td>동의 철회시까지</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="personal-info-handling">
+                <h2>2. 개인정보의 처리 및 보유기간</h2>
+                <p>회사는 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
+                <p>각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.</p>
+                <ul>
+                    <li>회원 가입 및 관리 : 회원 탈퇴 시까지</li>
+                    <li>재화 또는 서비스 제공 : 재화·서비스 공급완료 및 요금결제·정산 완료시까지</li>
+                </ul>
+            </section>
+
+            <!-- 추가 섹션들... -->
+
+            <section class="contact-info">
+                <h2>개인정보 관리 담당자</h2>
+                <p>회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+                
+                <div class="contact-details">
+                    <p>개인정보보호 책임자</p>
+                    <ul>
+                        <li>이름: 최지혜</li>
+                        <li>직책: 이사</li>
+                        <li>연락처: 02-333-6525</li>
+                        <li>이메일: hello@granhand.com</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="web-footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-social">
+                        <a href="https://instagram.com/granhand" target="_blank" class="instagram-link">
+                            <img src="/images/icons/instagram.svg" alt="Instagram" />
+                        </a>
+                    </div>
+                    <div class="footer-menu">
+                        <a href="#">자주 묻는 질문</a>
+                        <span class="divider">|</span>
+                        <a href="#">회사 소개</a>
+                        <span class="divider">|</span>
+                        <a href="#">채용 안내</a>
+                        <span class="divider">|</span>
+                        <a href="#">제휴 문의</a>
+                        <span class="divider">|</span>
+                        <a href="#">온라인 문의 서비스</a>
+                    </div>
+                </div>
+
+                <div class="footer-middle">
+                    <div class="footer-quote">
+                        <p>Sometimes you win,</p>
+                        <p>Sometimes you learn.</p>
+                    </div>
+                    <div class="footer-description">
+                        <p>향은 보이지도, 잡히지도 않지만, 우리에게 수많은 기억과 감정을 각인시키고, 나아가 우리 삶 속에서 많은 부분을 결정합니다. 그랑핸드는 이러한 향의 가치를 믿으며, 이를 매개로 한 끊임없는 시도를 통해 향의 일상화를 꿈꿉니다. 그랑핸드는 쉽게 소비되고 잊혀질 무언가가 아닌, 보이지 않는 곳에서 뚜렷한 존재감으로 모든 사람들에게 우리의 마음과 온기를 전하고 싶습니다.</p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                        <a href="#">이용약관</a>
+                        <span class="divider">|</span>
+                        <a href="#">개인정보처리방침</a>
+                        <span class="divider">|</span>
+                        <a href="#">개인정보관리책임자 최지혜</a>
+                    </div>
+                    <div class="company-info">
+                        <p>대표 정준혁 상호 (유)그랑핸드 사업자번호 127-88-01898 14-2, Jahamun-ro 4-gil, Jongno-gu, Seoul, Korea. T. 82-2-333-6525, E-Mail. hello@granhand.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
